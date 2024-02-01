@@ -1,0 +1,17 @@
+%SCRIPT
+content = cursor.selectedText();
+symbols = content.split(',');
+
+symbol = symbols[0].trim();
+minIndex = symbols[1].trim();
+maxIndex = symbols[2].trim();
+
+
+resultText = "";
+
+    for (let a = minIndex; a <= maxIndex; a++) {
+        for (let b = minIndex; b <= maxIndex; b++) {
+            resultText += `\\Gamma^{${symbol}}_{${a} ${b}} = \\frac{1}{2} \\g^{${symbol} \\d}(\\partial_{${b}}\\g_{\\d ${a}}+ \\partial_{${a}}\\g_{\\d ${b}} - \\partial_{\\d} \\g_{${a} ${b}})\\\\ \n`;
+        }
+    }
+cursor.insertText(resultText);

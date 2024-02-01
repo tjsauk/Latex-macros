@@ -1,0 +1,12 @@
+\usepackage{import}
+\import{C:/Users/rest_of_the_bath_to_the_folder_containing_sty_files/}{Coloring.sty}
+%To change between coloring and normal text, change the Coloring.sty to UnColoring.sty
+
+\newcommand{\currentbackground}{black}
+\newcommand{\currenttext}{white}
+%Set the background color and regular text color using these
+
+%taustaväri
+\pagecolor{\currentbackground} 
+%textin väri
+\color{\currenttext}

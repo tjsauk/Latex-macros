@@ -1,0 +1,1 @@
+perltex --nosafe --latex=pdflatex %.tex | txs:///view-pdf-internal

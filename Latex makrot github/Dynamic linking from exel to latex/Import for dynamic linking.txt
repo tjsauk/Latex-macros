@@ -1,0 +1,15 @@
+%KUN HALUAT PÄIVITTÄÄ DATAA KÄYTÄ USERCOMMANDIA PERLTEX BUILD
+
+\perlnewcommand{\getValue}[1]{
+
+#use Text::Template;
+use Spreadsheet::Read;
+use Spreadsheet::XLSX;
+
+$data = ReadData ("FileName.xlsx");
+
+$Output = $data->[1]{$_[0]}; #Where the [1] is the sheet, not the input
+
+return $Output
+
+}

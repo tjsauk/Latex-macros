@@ -1,0 +1,6 @@
+%SCRIPT
+app.clipboard = cursor.selectedText();
+cmd = system("python C:\\Users\\full path to the file\\indeksien_pyoraytys_skripti.py");
+information("Index permutation.")
+var ulos = app.clipboard;
+editor.replaceSelectedText(" " + ulos, {"append": true} )

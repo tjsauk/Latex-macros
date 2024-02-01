@@ -1,0 +1,7 @@
+\setlength{\fboxrule}{5pt}
+\fcolorbox{red}{\currentbackground}{
+	\begin{varwidth}{7.4in} 
+		 %|
+	 \end{varwidth} }
+
+% All content of the box goes to where the %| symbol is, in this form this can be used as macro 

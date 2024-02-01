@@ -1,0 +1,9 @@
+%SCRIPT
+text = app.clipboard
+numCols = text.split('\n')[0].split('\t').length
+colspec = "c" + Array(numCols).join("|c")
+
+text = text.replace(/\t/g, " & ")
+text = text.replace(/\n/g, " \\\\\n")
+text = "\\begin{table}[H] \n \\begin{center} \n \\caption{Taulukon otsikko} \n \\label{tägi} \n \\begin{tabular}{" + colspec  + "} \n $sym$ [yks]   & $sym$ [yks]  & $sym$ [yks] \\\\ \n \\hline \n " + text + "\\multicolumn{2}{r}{Keskiarvo} & 0 \n \\end{tabular} \n \\end{center} \n \\end{table} \n "
+cursor.insertText(text)

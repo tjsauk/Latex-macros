@@ -1,0 +1,7 @@
+% Imports and shell escape for gnuplot
+%---------------------------------------------------
+%Document and data files need to be named in gnublot compatible way.
+%So no spaces or other symbols than english aplhabets
+%--------------------------------------------------
+% !TeX TXS-program:compile = txs:///pdflatex/[-shell-escape]
+\usepackage[miktex]{gnuplottex}

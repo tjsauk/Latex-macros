@@ -1,0 +1,3 @@
+\usepackage{varwidth}
+\newcommand{\currentbackground}{black}
+\newcommand{\currenttext}{white}
